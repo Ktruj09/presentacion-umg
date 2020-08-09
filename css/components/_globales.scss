@@ -1,0 +1,50 @@
+/*Declaraciones de Variables*/
+$color-primario: #B88D00;
+$color-secundario: #FFCF33;
+$color-oscuro: #523F00;
+$Fuente1: 'Oswald';
+$Fuene2: 'AnticSlab';
+
+
+
+/*Importantdo fuentes a usar*/
+@font-face{
+    font-family: 'Oswald';
+    src: url('../css/fonts/Oswald-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+@font-face{
+    font-family: 'AnticSlab';
+    src: url('../css/fonts/AnticSlab-Regular.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+
+/*Reseteo en la página*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, a{
+    font-family: 'Oswald';
+    
+    text-transform: uppercase;
+}
+
+h3, p{
+    font-family: 'AnticSlab';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*función para poner opacidad al texto*/
+@function get-opacity($color, $nivel){
+    @return rgba($color, $nivel);
+}

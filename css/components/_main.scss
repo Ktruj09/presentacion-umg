@@ -1,0 +1,55 @@
+.main-container{
+    display: grid;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid  $color-oscuro;
+    box-shadow: 15px 15px 15px #cccccc;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
+}
+
+.main-container .title {
+    margin: 0 auto;
+    margin-top: 40px;
+   animation: AnimationText 2s;
+}
+
+/*Animación*/
+@keyframes AnimationText{
+    0% {
+      transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+      transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+      transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+      transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+      transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+  }
+
